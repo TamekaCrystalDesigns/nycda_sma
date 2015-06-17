@@ -1,0 +1,10 @@
+<h1>Students</h1>
+
+<ul>
+	<%= @students.each do |student| %>
+		<li><span><%= link_to student.email, student_path(student) %></span></li>
+		<li><span><%= student.first_name %></span></li>
+		<li><span><%= student.last_name %></span></li>
+
+	<% end %>
+</ul>
