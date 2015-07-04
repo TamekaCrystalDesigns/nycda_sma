@@ -7,8 +7,11 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
+	<%= render '/layouts/navigation' %>
+
 	<nav>navbar coming soon.</nav>
 	<%= yield %>
+	<%= flash[:notice] if flash[:notice] %>
 
 </body>
 </html>

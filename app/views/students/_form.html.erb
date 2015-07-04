@@ -2,7 +2,7 @@
 
 	<% if @student.errors.any? %>
 		<div id="error_explanation">
-			<h2>The following <%= pluralize(@tudent.errors.count, "error") %> prevented this student from being saved</h2>
+			<h2>The following <%= pluralize(@student.errors.count, "error") %> prevented this student from being saved</h2>
 			<ul>
 				<% @student.errors.each do |error| %>
 					<li>

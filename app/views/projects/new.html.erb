@@ -1,0 +1,16 @@
+<h1>Project New</h1>
+
+<%= form_for @project do |f| %>
+	<div>
+		<%= f.label :name %>
+		<%= f.text_field :name %>
+	</div>
+	<div>
+		<%= f.label :student_id %>
+		<%= collection_select(:project, :student_id, Student.all, :id, :email) %>
+	</div>
+	<div>
+		<%= f.submit %>
+	</div>
+
+<% end %>
