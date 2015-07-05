@@ -10,8 +10,10 @@
 	<%= render '/layouts/navigation' %>
 
 	<nav>navbar coming soon.</nav>
-	<%= yield %>
 	<%= flash[:notice] if flash[:notice] %>
+
+	<%= yield %>
+
 
 </body>
 </html>
